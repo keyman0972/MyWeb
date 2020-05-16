@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>第六題</title>
+</head>
+<style>
+table tr td{
+	width:10%;
+	height:70px;
+	background-color:#D0D0D0;
+}
+span{
+	font-size:40px;
+}
+.showFont{
+	background-color:#79FF79;
+}
+.ans{
+	background-color:#A6FFF;
+}
+input{
+	width:100%;
+}
+#col1{
+	width:75%;
+}
+#col2{
+	width:25%;
+}
+</style>
+<body>
+	<div class="jumbotron text-center" style="padding-top:10px;padding-bottom:10px;">
+		<div>
+			<span>1.下</span>&nbsp;
+			<span>2.土</span>&nbsp;
+			<span>3.水</span>&nbsp;
+			<span>4.身</span>&nbsp;
+			<span>5.雞</span>&nbsp;
+			<span>6.風</span>&nbsp;
+			<span>7.蔗</span>&nbsp;
+			<span>8.菜</span>&nbsp;
+			<span>9.柑</span>&nbsp;
+			<span>10.鴨</span>&nbsp;
+			<span>10.空</span>&nbsp;
+		</div>
+		<a href="questionForFive.html">
+			<button type="button" id="lastBtn"
+				style="margin-left: 10%;" class="btn btn-success">
+				上一題
+			</button>
+		</a>
+		<a href="questionForSeven.html">
+			<button type="button" id="nextBtn"
+				style="margin-left: 10%;" class="btn btn-success">
+				下一題
+			</button>
+		</a>
+	</div>
+	<div class="container" style="width:95%;">
+		<div class="row">
+			<div id="col1" class="col-sm-4">
+				<table id="testTable" border="1" style="width:100%">
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>七</h2>
+							</div>
+						</td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>月</h2>
+							</div>
+						</td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>半</h2>
+							</div>
+						</td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>个</h2>
+							</div>
+						</td>
+						<td class="ans">
+							<input type="text" id="Question6ForQ1" value="" maxlength="2" />
+							<input type="hidden" id="Question6ForAns1" value="10" />
+						</td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>子</h2>
+							</div>
+						</td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>----</h2>
+							</div>
+						</td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>毋</h2>
+							</div>
+						</td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>知</h2>
+							</div>
+						</td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>死</h2>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>月</h2>
+							</div>
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>落</h2>
+							</div>
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="ans">
+							<input type="text" id="Question6ForQ2" value="" maxlength="2" />
+							<input type="hidden" id="Question6ForAns2" value="3" />
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>又</h2>
+							</div>
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>起</h2>
+							</div>
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="ans">
+							<input type="text" id="Question6ForQ3" value="" maxlength="2" />
+							<input type="hidden" id="Question6ForAns3" value="6" />
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>，</h2>
+							</div>
+						</td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>十</h2>
+							</div>
+						</td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>個</h2>
+							</div>
+						</td>
+						<td class="ans">
+							<input type="text" id="Question6ForQ4" value="" maxlength="2" />
+							<input type="hidden" id="Question6ForAns4" value="9" />
+						</td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>園</h2>
+							</div>
+						</td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>九</h2>
+							</div>
+						</td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>個 </h2>
+							</div>
+						</td>
+						<td class="ans">
+							<input type="text" id="Question6ForQ5" value="" maxlength="2" />
+							<input type="hidden" id="Question6ForAns5" value="11" />
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div id="col2" class="col-sm-4">
+				<div id="Explanation1" style="display:none">
+					<h2>客語：七月落水又起風，十個柑園九個空</h2>  
+					<h4>
+						<b>
+							解釋：有人說：「不怕七月半的鬼，就怕七月半的水。」翻開台灣風災史，
+							多半都是集中在農曆七月，賀伯、莫克拉、這些颱風吹掀了房屋毀壞了農作物，
+							在電視畫面最常看到的就是山林劫後景觀，映入眼前的是掉落滿的地柑橘還有柚子，
+							及淚流滿面的農友果民。
+						</b>
+					</h4>
+				</div>
+				<div id="Explanation2" style="display:none">
+					<h2>客語：七月半个鴨子</h2>
+					<h4>
+						<b>
+							解釋：易養的鴨子在農業社會，比起雞來更是低賤。雖然鴨子不受重視，
+							但自春天誕生以來至七月，早已豐姿翩翩，成熟肥美，因土雞都殺光這時便派上用場。
+							而這群鴨子仍然池中戲水、成群結隊，碰到主人仍熱情的呱呱叫，毫無戒心，
+							豈不知將為盤中飧。此諺語除了說明鴨子的善良，被最親近的人類出賣，喻人要居安思危，
+							洞明利害。​
+						</b>
+					</h4> 
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+$(document).ready(function(){
+	
+	$("#Question6ForQ1").change(function(){
+		var Question6ForQ1 = $(this).val();
+		var Question6ForAns1 = $("#Question6ForAns1").val();
+		if(Question6ForQ1 == Question6ForAns1){
+			alert("答案正確");
+			$("#Question6ForQ1").attr("readonly", true);
+			showExplanation();
+		}else{
+			$(this).val("");
+			alert("答案錯誤");
+		}
+	});
+	$("#Question6ForQ2").change(function(){
+		var Question6ForQ2 = $(this).val();
+		var Question6ForAns2 = $("#Question6ForAns2").val();
+		if(Question6ForQ2 == Question6ForAns2){
+			alert("答案正確");
+			$("#Question6ForQ2").attr("readonly", true);
+			showExplanation();
+		}else{
+			$(this).val("");
+			alert("答案錯誤");
+		}
+	});
+	$("#Question6ForQ3").change(function(){
+		var Question6ForQ3 = $(this).val();
+		var Question6ForAns3 = $("#Question6ForAns3").val();
+		if(Question6ForQ3 == Question6ForAns3){
+			alert("答案正確");
+			$("#Question6ForQ3").attr("readonly", true);
+			showExplanation();
+		}else{
+			$(this).val("");
+			alert("答案錯誤");
+		}
+	});
+	$("#Question6ForQ4").change(function(){
+		var Question6ForQ4 = $(this).val();
+		var Question6ForAns4 = $("#Question6ForAns4").val();
+		if(Question6ForQ4 == Question6ForAns4){
+			alert("答案正確");
+			$("#Question6ForQ4").attr("readonly", true);
+			showExplanation();
+		}else{
+			$(this).val("");
+			alert("答案錯誤");
+		}
+	});
+	$("#Question6ForQ5").change(function(){
+		var Question6ForQ5 = $(this).val();
+		var Question6ForAns5 = $("#Question6ForAns5").val();
+		if(Question6ForQ5 == Question6ForAns5){
+			alert("答案正確");
+			$("#Question6ForQ5").attr("readonly", true);
+			showExplanation();
+		}else{
+			$(this).val("");
+			alert("答案錯誤");
+		}
+	});
+});
+function showExplanation(){
+	if($("#Question6ForQ1").val() != ""){
+		$("#Explanation2").show();
+	}
+	if($("#Question6ForQ2").val() != "" && $("#Question6ForQ3").val() != "" && 
+			$("#Question6ForQ4").val() != "" && $("#Question6ForQ5").val() != ""){
+		$("#Explanation1").show();
+	}
+}
+</script>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>第一題</title>
+</head>
+<style>
+table tr td{
+	width:10%;
+	height:70px;
+	background-color:#D0D0D0;
+}
+span{
+	font-size:40px;
+}
+.showFont{
+	background-color:#79FF79;
+}
+.ans{
+	background-color:#A6FFF;
+}
+input{
+	width:100%;
+}
+#col1{
+	width:75%;
+}
+#col2{
+	width:25%;
+}
+</style>
+<body>
+	<div class="jumbotron text-center" style="padding-top:10px;padding-bottom:10px;">
+		<div>
+			<span>1.吃</span>&nbsp;
+			<span>2.食</span>&nbsp;
+			<span>3.喜</span>&nbsp;
+			<span>4.洗</span>&nbsp;
+			<span>5.作</span>&nbsp;
+			<span>6.做</span>&nbsp;
+			<span>7.項</span>&nbsp;
+			<span>8.像</span>&nbsp;
+			<span>9.父</span>&nbsp;
+			<span>10.母</span>&nbsp;
+			<span>11.肝</span>&nbsp;
+		</div>
+		<a href="index.html">
+			<button type="button" id="lastBtn"
+				style="margin-left: 10%;" class="btn btn-success">
+				回首頁
+			</button>
+		</a>
+		<a href="questionForTwo.html">
+			<button type="button" id="nextBtn"
+				style="margin-left: 10%;" class="btn btn-success">
+				下一題
+			</button>
+		</a>
+	</div>
+	<div class="container" style="width:95%;">
+		<div class="row">
+			<div id="col1" class="col-sm-4">
+				<table id="testTable" border="1" style="width:100%">
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>事</h2>
+							</div>
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="ans">
+							<input type="text" id="Question1ForQ1" value="" maxlength="2" />
+							<input type="hidden" id="Question1ForAns1" value="6" />
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td class="ans">
+							<input type="text" id="Question1ForQ2" value="" maxlength="2" />
+							<input type="hidden" id="Question1ForAns2" value="1" />
+						</td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>飽</h2>
+							</div>
+						</td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>吂</h2>
+							</div>
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="ans">
+							<input type="text" id="Question1ForQ3" value="" maxlength="2" />
+							<input type="hidden" id="Question1ForAns3" value="4" />
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>降</h2>
+							</div>
+						</td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>子</h2>
+							</div>
+						</td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>身</h2>
+							</div>
+						</td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>無</h2>
+							</div>
+						</td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>降</h2>
+							</div>
+						</td>
+						<td class="showFont">
+							<div style="font-family:標楷體;">
+								<h2>子</h2>
+							</div>
+						</td>
+						<td class="ans">
+							<input type="text" id="Question1ForQ4" value="" maxlength="2" />
+							<input type="hidden" id="Question1ForAns4" value="11" />
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="ans">
+							<input type="text" id="Question1ForQ5" value="" maxlength="2" />
+							<input type="hidden" id="Question1ForAns5" value="7" />
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div id="col2" class="col-sm-4">
+			<div>
+		</div>
+	</div>
+</body>
+<script>
+$(document).ready(function(){
+	
+	$("#Question1ForQ1").change(function(){
+		var Question1ForQ1 = $(this).val();
+		var Question1ForAns1 = $("#Question1ForAns1").val();
+		if(Question1ForQ1 == Question1ForAns1){
+			alert("答案正確");
+			$("#Question1ForQ1").attr("readonly", true);
+		}else{
+			$(this).val("");
+			alert("答案錯誤");
+		}
+	});
+	
+	$("#Question1ForQ2").change(function(){
+		var Question1ForQ2 = $(this).val();
+		var Question1ForAns2 = $("#Question1ForAns2").val();
+		if(Question1ForQ2 == Question1ForAns2){
+			alert("答案正確");
+			$("#Question1ForQ2").attr("readonly", true);
+		}else{
+			$(this).val("");
+			alert("答案錯誤");
+		}
+	});
+	
+	$("#Question1ForQ3").change(function(){
+		var Question1ForQ3 = $(this).val();
+		var Question1ForAns3 = $("#Question1ForAns3").val();
+		if(Question1ForQ3 == Question1ForAns3){
+			alert("答案正確");
+			$("#Question1ForQ3").attr("readonly", true);
+		}else{
+			$(this).val("");
+			alert("答案錯誤");
+		}
+	});
+	
+	$("#Question1ForQ4").change(function(){
+		var Question1ForQ4 = $(this).val();
+		var Question1ForAns4 = $("#Question1ForAns4").val();
+		if(Question1ForQ4 == Question1ForAns4){
+			alert("答案正確");
+			$("#Question1ForQ4").attr("readonly", true);
+		}else{
+			$(this).val("");
+			alert("答案錯誤");
+		}
+	});
+	
+	$("#Question1ForQ5").change(function(){
+		var Question1ForQ5 = $(this).val();
+		var Question1ForAns5 = $("#Question1ForAns5").val();
+		if(Question1ForQ5 == Question1ForAns5){
+			alert("答案正確");
+			$("#Question1ForQ5").attr("readonly", true);
+		}else{
+			$(this).val("");
+			alert("答案錯誤");
+		}
+	});
+});
+</script>
+</html>

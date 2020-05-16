@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>熱身題</title>
+</head>
+<style>
+table tr td{
+	width:10%;
+	height:70px;
+	background-color:#D0D0D0;
+}
+span{
+	font-size:40px;
+}
+.showFont{
+	background-color:#79FF79;
+}
+.ans{
+	background-color:#A6FFF;
+}
+input{
+	width:100%;
+}
+</style>
+<body>
+	<div class="jumbotron text-center">
+		<div style="width: 50%;margin-left: 25%;">
+			<span>1.謝</span>&nbsp;
+			<span>2.蒙</span>&nbsp;
+			<span>3.當</span>&nbsp;
+			<span>4.蓋</span>&nbsp;
+			<span>5.接</span>&nbsp;
+			<span>6.好</span>&nbsp;
+			<a href="index.html">
+				<button type="button" id="returnBtn"
+					style="margin-left: 10%;" class="btn btn-success">
+					回首頁
+				</button>
+			</a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="">
+			<div class="col-sm-4" style="width:100%">
+				<table id="testTable" border="1" style="width:100%">
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="showFont"><div style="font-family:標楷體;"><h2>承</h2></div></td>
+						<td class="ans">
+							<input type="text" id="testQ1" value="" maxlength="1" />
+							<input type="hidden" id="AnswerQ1" value="2" />
+						</td>
+						<td class="showFont"><div style="font-family:標楷體;"><h2>你</h2></div></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="ans">
+							<input type="text" id="testQ2" value="" maxlength="1" />
+							<input type="hidden" id="AnswerQ2" value="3" />
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="showFont"><div style="font-family:標楷體;"><h2>靚</h2></div></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				<div id="footer">&nbsp;&nbsp;&nbsp;</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+$(document).ready(function(){
+	
+	$("#testQ1").change(function(){
+		var testQ1 = $(this).val();
+		var AnswerQ1 = $("#AnswerQ1").val();
+		if(testQ1 == AnswerQ1){
+			alert("答案正確");
+			$("#testQ1").attr("readonly", true);
+		}else{
+			$(this).val("");
+			alert("答案錯誤");
+		}
+	});
+	$("#testQ2").change(function(){
+		var testQ2 = $(this).val();
+		var AnswerQ2 = $("#AnswerQ2").val();
+		if(testQ2 == AnswerQ2){
+			alert("答案正確");
+			$("#testQ2").attr("readonly", true);
+			showBtn();
+		}else{
+			$(this).val("");
+			alert("答案錯誤");
+		}
+	});
+});
+
+function showBtn(){
+	if($("#testQ1").val() != '' && $("#testQ2").val() != ''){
+		$("#returnBtn").show();
+	}
+}
+function hidBtn(){
+	$("#returnBtn").hide();
+}
+</script>
+</html>
